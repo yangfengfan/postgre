@@ -23,24 +23,34 @@ public class TestSpringBlob {
     static String PowerValue = "powervalue_boer";
     static String EpValueOfCollect = "epvalueofcollection_boer";
     public static void main(String args[]) {
-        findProectName("兴港",EpValueOfCollect);
+        findProectName("兴港",EpValueOfCollect,"createtime < '2017-12-01 00:00:00' ");
     }
-    public static void findProectName(String projectName ,String tableName ){
+    public static void findProectName(String projectName ,String tableName, String time ){
         Connection conn = null;
         List<List<Object>> dataList = new ArrayList<List<Object>>();
         List<Object> rowList = null;
         List<List<Object>> dataListhead = new ArrayList<List<Object>>();
         List<Object> rowListhead = null;
+
+        List<List<Object>> dataList1 = new ArrayList<List<Object>>();
+        List<Object> rowList1 = null;
+        List<List<Object>> dataListhead1 = new ArrayList<List<Object>>();
+        List<Object> rowListhead1 = null;
         try {
             Class.forName("org.postgresql.Driver");
             conn = DriverManager.getConnection(url, usr, psd);
+//            Statement statement = conn.createStatement();
             //Statement st = conn.createStatement();
             //查看某张表中，字段name为？数据
-            String sql = "SELECT * FROM "+tableName+" WHERE deleteflag = '0' AND datapoint_id in\n" +
+            String sql = "SELECT * FROM "+tableName+" WHERE "+time+" AND deleteflag = '0' AND datapoint_id in\n" +
                     "(SELECT name FROM collections_boer WHERE deleteflag = '0' AND loop_id in\n" +
                     "(SELECT id FROM loop_boer WHERE deleteflag = '0' AND electricproject_id in\n" +
                     "(SELECT id FROM electricproject_boer WHERE deleteflag = '0' AND name LIKE ?)\n" +
                     ")\n" +
+                    ")";
+            String sql1 = "SELECT name FROM collections_boer WHERE deleteflag = '0' AND loop_id in\n" +
+                    "(SELECT id FROM loop_boer WHERE deleteflag = '0' AND electricproject_id in\n" +
+                    "(SELECT id FROM electricproject_boer WHERE deleteflag = '0' AND name LIKE ? )\n" +
                     ")";
 //            String sql = "select * from "+tableName+" where name like ?";
             //name中包含?,查看该?的loop_id在某张表中的数据
@@ -53,7 +63,7 @@ public class TestSpringBlob {
             //String sql = "select * from "+tableName+" p where p.project_id = (select id from electricproject_boer e where e.name like ?) order by createtime desc";
             //name -> electricproject_id -> loop_id
             //String sql = "select * from "+tableName+" p where p.loop_id in (select id from loop_boer l where l.electricproject_id = (select id from electricproject_boer e where e.name like ?)) order by createtime desc,loop_id desc";
-            PreparedStatement pstmt = conn.prepareStatement(sql);
+            PreparedStatement pstmt = conn.prepareStatement(sql1);
             //ResultSet卷动
             //PreparedStatement pstmt = conn.prepareStatement(sql,ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
             //rs.last();// 移动到最后
@@ -68,9 +78,8 @@ public class TestSpringBlob {
                 dataListhead.add(rowListhead);
             }
             System.out.println();
-            int a =0;
+
             while (rs.next()) {
-                a++;
                 rowList = new ArrayList<Object>();
                 for ( int i=1;i <= rowL; i++) {
                     System.out.print(rs.getString(data.getColumnLabel(i)));
@@ -78,13 +87,35 @@ public class TestSpringBlob {
                     rowList.add(rs.getString(data.getColumnLabel(i)));
                 }
                 System.out.println("");
-                System.out.println(a);
                 dataList.add(rowList);
             }
+            System.out.println(dataList);
+            System.out.println(dataList.get(1).get(0));
+
+            rowList1 = new ArrayList<Object>();
+            for (int i=0;i <= dataList.size()-1; i++){
+                String sql2 = "SELECT * FROM epvalueofcollection_boer WHERE createtime < '2017-12-01 00:00:00' AND deleteflag = '0' AND datapoint_id =  "+"'"+dataList.get(i).get(0)+"'";
+                Statement statement = conn.createStatement();
+                ResultSet rs1 = statement.executeQuery(sql2);
+                System.out.println(rs1);
+                ResultSetMetaData data1 = rs1.getMetaData();
+                int rowL1 = data1.getColumnCount();
+
+                while (rs1.next()) {
+                    rowList1.clear();
+                    for ( int b=1;b <= rowL1; b++) {
+                        System.out.print(rs1.getString(data1.getColumnLabel(b)));
+                        System.out.print("  ");
+                        rowList1.add(rs1.getString(data1.getColumnLabel(b)));
+                    }
+                    System.out.println("");
+                   dataList1.add(rowList1);
+                }
+            }
+
 //创建文件
             String fileName = tableName+".csv";//文件名称
             String filePath = "c:/test/"+projectName+"/"; //文件路径
-
             File csvFile = null;
             BufferedWriter csvWtriter = null;
             try {
@@ -109,7 +140,7 @@ public class TestSpringBlob {
                 writeRow(rowListhead, csvWtriter);
 
                 // 写入文件内容
-                for (List<Object> row : dataList) {
+                for (List<Object> row : dataList1) {
                     writeRow(row, csvWtriter);
                 }
                 csvWtriter.flush();
