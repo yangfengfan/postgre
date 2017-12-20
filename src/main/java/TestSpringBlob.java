@@ -23,7 +23,11 @@ public class TestSpringBlob {
     static String PowerValue = "powervalue_boer";
     static String EpValueOfCollect = "epvalueofcollection_boer";
     public static void main(String args[]) {
-        findProectName("兴港",EpValueOfCollect,"createtime < '2017-12-01 00:00:00' ");
+        findProectName("盛锦三配",EpValueOfCollect,"createtime < '2017-12-01 00:00:00' ");
+        //郑港
+        //锦绣二配
+        //盛锦二配
+        //盛锦三配
     }
     public static void findProectName(String projectName ,String tableName, String time ){
         Connection conn = null;
@@ -94,7 +98,7 @@ public class TestSpringBlob {
 
             rowList1 = new ArrayList<Object>();
             for (int i=0;i <= dataList.size()-1; i++){
-                String sql2 = "SELECT * FROM epvalueofcollection_boer WHERE createtime < '2017-12-01 00:00:00' AND deleteflag = '0' AND datapoint_id =  "+"'"+dataList.get(i).get(0)+"'";
+                String sql2 = "SELECT * FROM epvalueofcollection_boer WHERE createtime >=  '2017-08-01 00:00:00' AND  createtime<'2017-09-01 00:00:00' AND deleteflag = '0' AND datapoint_id =  "+"'"+dataList.get(i).get(0)+"'"+"ORDER  BY createtime";
                 Statement statement = conn.createStatement();
                 ResultSet rs1 = statement.executeQuery(sql2);
                 System.out.println(rs1);
@@ -102,10 +106,10 @@ public class TestSpringBlob {
                 int rowL1 = data1.getColumnCount();
 
                 while (rs1.next()) {
-                    rowList1.clear();
+                    rowList1 = new ArrayList();
                     for ( int b=1;b <= rowL1; b++) {
-                        System.out.print(rs1.getString(data1.getColumnLabel(b)));
-                        System.out.print("  ");
+                       // System.out.print(rs1.getString(data1.getColumnLabel(b)));
+                       // System.out.print("  ");
                         rowList1.add(rs1.getString(data1.getColumnLabel(b)));
                     }
                     System.out.println("");
@@ -114,7 +118,7 @@ public class TestSpringBlob {
             }
 
 //创建文件
-            String fileName = tableName+".csv";//文件名称
+            String fileName = tableName+"08"+".csv";//文件名称
             String filePath = "c:/test/"+projectName+"/"; //文件路径
             File csvFile = null;
             BufferedWriter csvWtriter = null;
