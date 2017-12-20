@@ -76,11 +76,7 @@ public class TestSpringBlob {
             ResultSet rs = pstmt.executeQuery();
             ResultSetMetaData data = rs.getMetaData();
             int rowL = data.getColumnCount();
-            rowListhead = new ArrayList<Object>();
-            for ( int i=1;i <= rowL; i++) {
-                rowListhead.add(data.getColumnLabel(i));
-                dataListhead.add(rowListhead);
-            }
+
             System.out.println();
 
             while (rs.next()) {
@@ -104,6 +100,11 @@ public class TestSpringBlob {
                 System.out.println(rs1);
                 ResultSetMetaData data1 = rs1.getMetaData();
                 int rowL1 = data1.getColumnCount();
+                rowListhead1 = new ArrayList<Object>();
+                for ( int a=1;a <= rowL1; a++) {
+                    rowListhead1.add(data1.getColumnLabel(a));
+                    dataListhead1.add(rowListhead1);
+                }
 
                 while (rs1.next()) {
                     rowList1 = new ArrayList();
@@ -141,7 +142,7 @@ public class TestSpringBlob {
                 //csvWtriter.newLine();
 
                 // 写入文件头部
-                writeRow(rowListhead, csvWtriter);
+                writeRow(rowListhead1, csvWtriter);
 
                 // 写入文件内容
                 for (List<Object> row : dataList1) {
