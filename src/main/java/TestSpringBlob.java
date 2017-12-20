@@ -10,22 +10,57 @@ public class TestSpringBlob {
     static String usr = "electric";
     static String psd = "electric";
     static String CollectionBoer = "collections_boer";
+    static String CollectionBoerSql = "select * from collections_boer  where electricproject_id = (select id from electricproject_boer  where name like ?) order by createtime desc,type asc";
     static String ConsumptionBoer = "consumption_boer";
+    static String ConsumptionBoerSql = "select * from consumption_boer  where loop_id in (select id from loop_boer  where electricproject_id = (select id from electricproject_boer  where name like ?)) order by createtime desc,total desc";
     static String ElectricprojectBoer = "electricproject_boer";
+    static String ElectricprojectBoerSql = "select * from electricproject_boer  where name like ?";
     static String LoopBoer = "loop_boer";
+    static String LoopBoerSql = "select * from loop_boer  where electricproject_id = (select id from electricproject_boer  where name like ?) order by createtime desc";
     static String BianYaQiBoer = "bianyaqi_boer";
+    static String BianYaQiBoerSql = "select * from bianyaqi_boer  where project_id = (select id from electricproject_boer where name  like ?) order by createtime desc ";
     static String CapacitancepamBoer = "capacitancepam_boer";
+    static String CapacitancepamBoerSql = "select * from capacitancepam_boer  where loop_id in (select id from loop_boer where electricproject_id = (select id from electricproject_boer  where name like ?)) order by createtime desc";
     static String HighLowVoltage = "highlowvoltage_boer";
+    static String HighLowVoltageSql = "select * from highlowvoltage_boer  where electricproject_id = (select id from electricproject_boer  where name like ?) order by createtime desc";
     static String HighVoltage = "highvoltagesystem_boer";
+    static String HighVoltageSql = "select * from highvoltagesystem_boer  where electricproject_id =  (select id from electricproject_boer  where name like ?) order by createtime desc";
     static String LowVoltageSystemBoer = "lowvoltagesystem_boer";
+    static String LowVoltageSystemBoerSql = "select * from lowvoltagesystem_boer  where electricproject_id =  (select id from electricproject_boer  where name  like ?) order by createtime desc";
     static String PowerRoomBoer = "power_room_boer";
+    static String PowerRoomBoerSql = "select * from power_room_boer where project_id = (select id from electricproject_boer where name like ?) order by createtime desc";
     static String PowerFactor = "powerfactor_boer";
+    static String PowerFactorSql = "select * from powerfactor_boer  where loop_id in (select id from loop_boer  where electricproject_id = (select id from electricproject_boer  where name like ?)) order by createtime desc,loop_id desc";
     static String PowerValue = "powervalue_boer";
+    static String PowerValueSql = "select * from powervalue_boer  where loop_id in (select id from loop_boer where electricproject_id = (select id from electricproject_boer  where name like ? )) order by createtime desc,loop_id desc";
     static String EpValueOfCollect = "epvalueofcollection_boer";
     public static void main(String args[]) {
-        findProectName("兴港",EpValueOfCollect);
+        Map<String, String> map = new HashMap<String, String>();
+        map.put(CollectionBoer, CollectionBoerSql);
+        map.put(ConsumptionBoer, ConsumptionBoerSql);
+        map.put(ElectricprojectBoer, ElectricprojectBoerSql);
+        map.put(LoopBoer, LoopBoerSql);
+        map.put(BianYaQiBoer, BianYaQiBoerSql);
+        map.put(CapacitancepamBoer, CapacitancepamBoerSql);
+        map.put(HighLowVoltage, HighLowVoltageSql);
+        map.put(HighVoltage, HighVoltageSql);
+        map.put(LowVoltageSystemBoer, LowVoltageSystemBoerSql);
+        map.put(PowerRoomBoer, PowerRoomBoerSql);
+        map.put(PowerFactor, PowerFactorSql);
+        map.put(PowerValue, PowerValueSql);
+        System.out.println(map);
+        for (String key : map.keySet()) {
+            //map.keySet()返回的是所有key的值
+            String str = map.get(key);//得到每个key多对用value的值
+            findProectName("郑港",str, key);
+        }
+        //findProectName("郑港", ElectricprojectBoerSql, ElectricprojectBoer);
+        //郑港
+        //锦绣二配
+        //盛锦二配
+        //盛锦三配
     }
-    public static void findProectName(String projectName ,String tableName ){
+    public static void findProectName(String projectName ,String sql ,String tableName){
         Connection conn = null;
         List<List<Object>> dataList = new ArrayList<List<Object>>();
         List<Object> rowList = null;
@@ -36,12 +71,8 @@ public class TestSpringBlob {
             conn = DriverManager.getConnection(url, usr, psd);
             //Statement st = conn.createStatement();
             //查看某张表中，字段name为？数据
-            String sql = "SELECT * FROM "+tableName+" WHERE deleteflag = '0' AND datapoint_id in\n" +
-                    "(SELECT name FROM collections_boer WHERE deleteflag = '0' AND loop_id in\n" +
-                    "(SELECT id FROM loop_boer WHERE deleteflag = '0' AND electricproject_id in\n" +
-                    "(SELECT id FROM electricproject_boer WHERE deleteflag = '0' AND name LIKE ?)\n" +
-                    ")\n" +
-                    ")";
+           // String sql = "select * from electricproject_boer  where name like ?";
+            String sql1 = "select * from loop_boer  where electricproject_id = (select id from electricproject_boer  where name like ?) order by createtime desc ";
 //            String sql = "select * from "+tableName+" where name like ?";
             //name中包含?,查看该?的loop_id在某张表中的数据
             //String sql = "SELECT * FROM "+tableName+" WHERE loop_id in (SELECT id FROM loop_boer WHERE electricproject_id = (SELECT id FROM electricproject_boer WHERE name LIKE  ?)) order by createtime desc";
