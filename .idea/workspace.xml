@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29525e40-6baa-45a5-b3c8-23d6457e0db4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/KeyValueForDate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/SpiltDateUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/TestSpringBlob.class" afterPath="$PROJECT_DIR$/target/classes/TestSpringBlob.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/TestSpringBlob.java" afterPath="$PROJECT_DIR$/src/main/java/TestSpringBlob.java" />
@@ -31,8 +33,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="23" selection-end-column="10" />
+            <state vertical-scroll-proportion="-6.785714">
+              <caret line="10" column="73" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -41,26 +43,39 @@
       <file leaf-file-name="TestSpringBlob.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TestSpringBlob.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43930635">
-              <caret line="85" column="31" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.53203344">
+              <caret line="73" column="92" selection-start-line="73" selection-start-column="92" selection-end-line="73" selection-end-column="92" />
+              <folding>
+                <marker date="1513925422650" expanded="true" signature="2982:3286" placeholder="SELECT name collections_boer" />
+                <marker date="1513925422650" expanded="true" signature="3081:3258" placeholder="SELECT id FR... loop_boer" />
+                <marker date="1513925422650" expanded="true" signature="3182:3256" placeholder="SELECT id FR... electricproject_boer" />
+                <marker date="1513925422650" expanded="true" signature="5976:6037" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+                <marker date="1513925422650" expanded="true" signature="5976:6088" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+                <marker date="1513925422650" expanded="true" signature="5976:6219" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpiltDateUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SpiltDateUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="57" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1513757675150" expanded="true" signature="2158:2172" placeholder="SELECT * FRO... missingValuemissingValue" />
-                <marker date="1513757675150" expanded="true" signature="2158:2191" placeholder="SELECT * FRO... missingValue" />
-                <marker date="1513757675150" expanded="true" signature="2158:2600" placeholder="SELECT * FRO... missingValue" />
-                <marker date="1513757675150" expanded="true" signature="2269:2572" placeholder="SELECT name collections_boer" />
-                <marker date="1513757675150" expanded="true" signature="2368:2544" placeholder="SELECT id FR... loop_boer" />
-                <marker date="1513757675150" expanded="true" signature="2469:2543" placeholder="SELECT id FR... electricproject_boer" />
-                <marker date="1513757675150" expanded="true" signature="2630:2934" placeholder="SELECT name collections_boer" />
-                <marker date="1513757675150" expanded="true" signature="2729:2906" placeholder="SELECT id FR... loop_boer" />
-                <marker date="1513757675150" expanded="true" signature="2830:2904" placeholder="SELECT id FR... electricproject_boer" />
-                <marker date="1513757675150" expanded="true" signature="5636:5794" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-                <marker date="1513757675150" expanded="true" signature="5636:5796" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-                <marker date="1513757675150" expanded="true" signature="5636:5797" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-                <marker date="1513757675150" expanded="true" signature="5636:5800" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-                <marker date="1513757675150" expanded="true" signature="5636:5828" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-                <marker date="1513757675150" expanded="true" signature="5636:5851" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-                <marker date="1513757675150" expanded="true" signature="5636:5853" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KeyValueForDate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/KeyValueForDate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+              <folding>
+                <element signature="e#193#194#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,7 +106,9 @@
         <option value="$PROJECT_DIR$/src/main/java/CSVCrate.java" />
         <option value="$PROJECT_DIR$/src/main/java/aaaa.java" />
         <option value="$PROJECT_DIR$/src/test/java/aaa.java" />
+        <option value="$PROJECT_DIR$/src/main/java/KeyValueForDate.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/SpiltDateUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/TestSpringBlob.java" />
       </list>
     </option>
@@ -174,8 +191,8 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -226,9 +243,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../postgre_first" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.TestSpringBlob">
     <configuration default="false" name="TestSpringBlob" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -264,6 +281,21 @@
     <configuration default="false" name="aaaa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="aaaa" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="postgre" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SpiltDateUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="SpiltDateUtil" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -731,16 +763,18 @@
       <envs />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.TestSpringBlob" />
       <item index="1" class="java.lang.String" itemvalue="Application.aaa" />
       <item index="2" class="java.lang.String" itemvalue="Application.aaaa" />
+      <item index="3" class="java.lang.String" itemvalue="Application.SpiltDateUtil" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Application.TestSpringBlob" />
-        <item index="1" class="java.lang.String" itemvalue="Application.aaa" />
-        <item index="2" class="java.lang.String" itemvalue="Application.aaaa" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SpiltDateUtil" />
+        <item index="2" class="java.lang.String" itemvalue="Application.aaa" />
+        <item index="3" class="java.lang.String" itemvalue="Application.aaaa" />
       </list>
     </recent_temporary>
   </component>
@@ -779,7 +813,9 @@
       <workItem from="1512457123232" duration="1150000" />
       <workItem from="1512520829465" duration="3250000" />
       <workItem from="1513660959629" duration="18982000" />
-      <workItem from="1513737898894" duration="4715000" />
+      <workItem from="1513737898894" duration="17365000" />
+      <workItem from="1513845532200" duration="581000" />
+      <workItem from="1513902565034" duration="7259000" />
     </task>
     <task id="LOCAL-00001" summary="epvalue">
       <created>1513676288887</created>
@@ -787,27 +823,39 @@
       <option name="project" value="LOCAL" />
       <updated>1513676288887</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="epvalue表头错误">
+      <created>1513757720262</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1513757720262</updated>
+    </task>
+    <task id="LOCAL-00003" summary="epvalue表头排版修改&#10;">
+      <created>1513758936184</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1513758936184</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71794000" />
+    <option name="totallyTimeSpent" value="92284000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279743" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4340836" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3488746" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3762058" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23071104" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23071104" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -848,11 +896,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="epvalue" />
-    <option name="LAST_COMMIT_MESSAGE" value="epvalue" />
+    <MESSAGE value="epvalue表头错误" />
+    <MESSAGE value="epvalue表头排版修改&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="epvalue表头排版修改&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="41" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TestSpringBlob.java</url>
+          <line>107</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="45" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -877,25 +935,100 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/TestSpringBlob.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="137" column="17" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="17" />
+          <folding>
+            <marker date="1513925422650" expanded="true" signature="2982:3286" placeholder="SELECT name collections_boer" />
+            <marker date="1513925422650" expanded="true" signature="3081:3258" placeholder="SELECT id FR... loop_boer" />
+            <marker date="1513925422650" expanded="true" signature="3182:3256" placeholder="SELECT id FR... electricproject_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6037" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6088" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6219" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SpiltDateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513757675150" expanded="true" signature="2158:2172" placeholder="SELECT * FRO... missingValuemissingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2191" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2600" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2269:2572" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2368:2544" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2469:2543" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="2630:2934" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2729:2906" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2830:2904" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5794" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5796" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5797" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5800" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5828" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5851" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5853" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KeyValueForDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <element signature="e#193#194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="23" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestSpringBlob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="137" column="17" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="17" />
+          <folding>
+            <marker date="1513925422650" expanded="true" signature="2982:3286" placeholder="SELECT name collections_boer" />
+            <marker date="1513925422650" expanded="true" signature="3081:3258" placeholder="SELECT id FR... loop_boer" />
+            <marker date="1513925422650" expanded="true" signature="3182:3256" placeholder="SELECT id FR... electricproject_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6037" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6088" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6219" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SpiltDateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KeyValueForDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <element signature="e#193#194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="23" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestSpringBlob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1513925422650" expanded="true" signature="2982:3286" placeholder="SELECT name collections_boer" />
+            <marker date="1513925422650" expanded="true" signature="3081:3258" placeholder="SELECT id FR... loop_boer" />
+            <marker date="1513925422650" expanded="true" signature="3182:3256" placeholder="SELECT id FR... electricproject_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6037" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6088" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6219" placeholder="SELECT * FRO... epvalueofcollection_boer" />
           </folding>
         </state>
       </provider>
@@ -904,11 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#8153#0" expanded="false" />
-            <element signature="e#2279#2280#0" expanded="false" />
-            <element signature="e#2327#2328#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -916,7 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,7 +1051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -941,23 +1067,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1513757675150" expanded="true" signature="2158:2172" placeholder="SELECT * FRO... missingValuemissingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2191" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2600" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2269:2572" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2368:2544" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2469:2543" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="2630:2934" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2729:2906" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2830:2904" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5794" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5796" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5797" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5800" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5828" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5851" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5853" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="2982:3286" placeholder="SELECT name collections_boer" />
+            <marker date="1513925422650" expanded="true" signature="3081:3258" placeholder="SELECT id FR... loop_boer" />
+            <marker date="1513925422650" expanded="true" signature="3182:3256" placeholder="SELECT id FR... electricproject_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6037" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6088" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6219" placeholder="SELECT * FRO... epvalueofcollection_boer" />
           </folding>
         </state>
       </provider>
@@ -966,7 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -974,7 +1088,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,23 +1104,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1513757675150" expanded="true" signature="2158:2172" placeholder="SELECT * FRO... missingValuemissingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2191" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2600" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2269:2572" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2368:2544" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2469:2543" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="2630:2934" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2729:2906" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2830:2904" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5794" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5796" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5797" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5800" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5828" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5851" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5853" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="2982:3286" placeholder="SELECT name collections_boer" />
+            <marker date="1513925422650" expanded="true" signature="3081:3258" placeholder="SELECT id FR... loop_boer" />
+            <marker date="1513925422650" expanded="true" signature="3182:3256" placeholder="SELECT id FR... electricproject_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6037" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6088" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6219" placeholder="SELECT * FRO... epvalueofcollection_boer" />
           </folding>
         </state>
       </provider>
@@ -1016,7 +1118,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1024,7 +1125,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,23 +1141,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1513757675150" expanded="true" signature="2158:2172" placeholder="SELECT * FRO... missingValuemissingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2191" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2600" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2269:2572" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2368:2544" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2469:2543" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="2630:2934" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2729:2906" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2830:2904" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5794" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5796" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5797" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5800" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5828" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5851" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5853" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="2982:3286" placeholder="SELECT name collections_boer" />
+            <marker date="1513925422650" expanded="true" signature="3081:3258" placeholder="SELECT id FR... loop_boer" />
+            <marker date="1513925422650" expanded="true" signature="3182:3256" placeholder="SELECT id FR... electricproject_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6037" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6088" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6219" placeholder="SELECT * FRO... epvalueofcollection_boer" />
           </folding>
         </state>
       </provider>
@@ -1066,7 +1155,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1074,7 +1162,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1091,23 +1178,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1513757675150" expanded="true" signature="2158:2172" placeholder="SELECT * FRO... missingValuemissingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2191" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2600" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2269:2572" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2368:2544" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2469:2543" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="2630:2934" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2729:2906" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2830:2904" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5794" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5796" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5797" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5800" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5828" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5851" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5853" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="2982:3286" placeholder="SELECT name collections_boer" />
+            <marker date="1513925422650" expanded="true" signature="3081:3258" placeholder="SELECT id FR... loop_boer" />
+            <marker date="1513925422650" expanded="true" signature="3182:3256" placeholder="SELECT id FR... electricproject_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6037" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6088" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6219" placeholder="SELECT * FRO... epvalueofcollection_boer" />
           </folding>
         </state>
       </provider>
@@ -1116,7 +1192,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1124,7 +1199,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1141,23 +1215,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1513757675150" expanded="true" signature="2158:2172" placeholder="SELECT * FRO... missingValuemissingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2191" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2600" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2269:2572" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2368:2544" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2469:2543" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="2630:2934" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2729:2906" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2830:2904" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5794" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5796" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5797" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5800" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5828" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5851" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5853" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="2982:3286" placeholder="SELECT name collections_boer" />
+            <marker date="1513925422650" expanded="true" signature="3081:3258" placeholder="SELECT id FR... loop_boer" />
+            <marker date="1513925422650" expanded="true" signature="3182:3256" placeholder="SELECT id FR... electricproject_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6037" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6088" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6219" placeholder="SELECT * FRO... epvalueofcollection_boer" />
           </folding>
         </state>
       </provider>
@@ -1166,7 +1229,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1174,7 +1236,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1191,23 +1252,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1513757675150" expanded="true" signature="2158:2172" placeholder="SELECT * FRO... missingValuemissingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2191" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2600" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2269:2572" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2368:2544" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2469:2543" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="2630:2934" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2729:2906" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2830:2904" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5794" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5796" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5797" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5800" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5828" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5851" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5853" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="2982:3286" placeholder="SELECT name collections_boer" />
+            <marker date="1513925422650" expanded="true" signature="3081:3258" placeholder="SELECT id FR... loop_boer" />
+            <marker date="1513925422650" expanded="true" signature="3182:3256" placeholder="SELECT id FR... electricproject_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6037" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6088" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6219" placeholder="SELECT * FRO... epvalueofcollection_boer" />
           </folding>
         </state>
       </provider>
@@ -1216,7 +1266,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1233,23 +1282,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1513757675150" expanded="true" signature="2158:2172" placeholder="SELECT * FRO... missingValuemissingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2191" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2600" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2269:2572" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2368:2544" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2469:2543" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="2630:2934" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2729:2906" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2830:2904" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5794" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5796" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5797" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5800" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5828" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5851" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5853" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="2982:3286" placeholder="SELECT name collections_boer" />
+            <marker date="1513925422650" expanded="true" signature="3081:3258" placeholder="SELECT id FR... loop_boer" />
+            <marker date="1513925422650" expanded="true" signature="3182:3256" placeholder="SELECT id FR... electricproject_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6037" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6088" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6219" placeholder="SELECT * FRO... epvalueofcollection_boer" />
           </folding>
         </state>
       </provider>
@@ -1267,23 +1305,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1513757675150" expanded="true" signature="2158:2172" placeholder="SELECT * FRO... missingValuemissingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2191" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2600" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2269:2572" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2368:2544" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2469:2543" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="2630:2934" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2729:2906" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2830:2904" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5794" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5796" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5797" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5800" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5828" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5851" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5853" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="2982:3286" placeholder="SELECT name collections_boer" />
+            <marker date="1513925422650" expanded="true" signature="3081:3258" placeholder="SELECT id FR... loop_boer" />
+            <marker date="1513925422650" expanded="true" signature="3182:3256" placeholder="SELECT id FR... electricproject_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6037" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6088" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6219" placeholder="SELECT * FRO... epvalueofcollection_boer" />
           </folding>
         </state>
       </provider>
@@ -1299,7 +1326,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1307,15 +1333,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="23" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1323,11 +1340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#8153#0" expanded="false" />
-            <element signature="e#2279#2280#0" expanded="false" />
-            <element signature="e#2327#2328#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1335,32 +1347,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7410072">
           <caret line="148" column="11" selection-start-line="148" selection-start-column="11" selection-end-line="148" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.785714">
+          <caret line="10" column="73" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KeyValueForDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <element signature="e#193#194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SpiltDateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="57" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TestSpringBlob.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43930635">
-          <caret line="85" column="31" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.53203344">
+          <caret line="73" column="92" selection-start-line="73" selection-start-column="92" selection-end-line="73" selection-end-column="92" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1513757675150" expanded="true" signature="2158:2172" placeholder="SELECT * FRO... missingValuemissingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2191" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2158:2600" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1513757675150" expanded="true" signature="2269:2572" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2368:2544" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2469:2543" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="2630:2934" placeholder="SELECT name collections_boer" />
-            <marker date="1513757675150" expanded="true" signature="2729:2906" placeholder="SELECT id FR... loop_boer" />
-            <marker date="1513757675150" expanded="true" signature="2830:2904" placeholder="SELECT id FR... electricproject_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5794" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5796" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5797" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5800" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5828" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5851" placeholder="SELECT * FRO... epvalueofcollection_boer" />
-            <marker date="1513757675150" expanded="true" signature="5636:5853" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="2982:3286" placeholder="SELECT name collections_boer" />
+            <marker date="1513925422650" expanded="true" signature="3081:3258" placeholder="SELECT id FR... loop_boer" />
+            <marker date="1513925422650" expanded="true" signature="3182:3256" placeholder="SELECT id FR... electricproject_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6037" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6088" placeholder="SELECT * FRO... epvalueofcollection_boer" />
+            <marker date="1513925422650" expanded="true" signature="5976:6219" placeholder="SELECT * FRO... epvalueofcollection_boer" />
           </folding>
         </state>
       </provider>
@@ -1423,7 +1451,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1443,7 +1470,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: postgresql:postgresql:9.4.1208-jdbc42-atlassian-hosted</last-edited>
+          <last-edited>Maven: org.json:json:20160810</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

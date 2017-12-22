@@ -23,11 +23,18 @@ public class TestSpringBlob {
     static String PowerValue = "powervalue_boer";
     static String EpValueOfCollect = "epvalueofcollection_boer";
     public static void main(String args[]) {
-        findProectName("盛锦三配",EpValueOfCollect,"createtime < '2017-12-01 00:00:00' ");
+        findProectName("锦绣二配",EpValueOfCollect,"createtime < '2017-12-01 00:00:00' ");
         //郑港
         //锦绣二配
         //盛锦二配
         //盛锦三配
+//        List<KeyValueForDate> list = SpiltDateUtil.getKeyValueForDate("2017-04-12 ","2017-12-21 ");
+//        for(KeyValueForDate date : list){
+//            System.out.println(date.getStartDate());
+//        }
+//        System.out.println(list.get(list.size()-1).getStartDate());
+//        System.out.println(list.get(list.size()-1).getEndDate());
+
     }
     public static void findProectName(String projectName ,String tableName, String time ){
         Connection conn = null;
@@ -93,8 +100,12 @@ public class TestSpringBlob {
             System.out.println(dataList.get(1).get(0));
 
             rowList1 = new ArrayList<Object>();
-            for (int i=0;i <= dataList.size()-1; i++){
-                String sql2 = "SELECT * FROM epvalueofcollection_boer WHERE createtime >=  '2017-08-01 00:00:00' AND  createtime<'2017-09-01 00:00:00' AND deleteflag = '0' AND datapoint_id =  "+"'"+dataList.get(i).get(0)+"'"+"ORDER  BY createtime";
+            List<KeyValueForDate> list = SpiltDateUtil.getKeyValueForDate("2017-08-12 ","2017-12-21 ");
+            for (int t=0; t<=list.size()-1;t++) {
+                dataList1 = new ArrayList();
+            for (int n=0;n <= dataList.size()-1; n++){
+
+                String sql2 = "SELECT * FROM epvalueofcollection_boer WHERE createtime >=  '"+ list.get(t).getStartDate() +"' AND  createtime<'"+ list.get(t+1).getStartDate() +"' AND deleteflag = '0' AND datapoint_id =  "+"'"+dataList.get(n).get(0)+"'"+"ORDER  BY createtime";
                 Statement statement = conn.createStatement();
                 ResultSet rs1 = statement.executeQuery(sql2);
                 System.out.println(rs1);
@@ -105,7 +116,7 @@ public class TestSpringBlob {
                     rowListhead1.add(data1.getColumnLabel(a));
                     dataListhead1.add(rowListhead1);
                 }
-
+//                dataList1 = new ArrayList();
                 while (rs1.next()) {
                     rowList1 = new ArrayList();
                     for ( int b=1;b <= rowL1; b++) {
@@ -113,51 +124,57 @@ public class TestSpringBlob {
                        // System.out.print("  ");
                         rowList1.add(rs1.getString(data1.getColumnLabel(b)));
                     }
-                    System.out.println("");
                    dataList1.add(rowList1);
-                }
-            }
 
-//创建文件
-            String fileName = tableName+"08"+".csv";//文件名称
-            String filePath = "c:/test/"+projectName+"/"; //文件路径
-            File csvFile = null;
-            BufferedWriter csvWtriter = null;
-            try {
-                csvFile = new File(filePath + fileName);
-                File parent = csvFile.getParentFile();
-                if (parent != null && !parent.exists()) {
-                    parent.mkdirs();
                 }
-                csvFile.createNewFile();
 
-                // GB2312使正确读取分隔符","
-                csvWtriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(csvFile), "GB2312"), 1024);
-                int num = dataListhead.size() / 2;
-                StringBuffer buffer = new StringBuffer();
-                for (int i = 0; i < num; i++) {
-                    buffer.append(" ,");
-                }
-               // csvWtriter.write(buffer.toString() + fileName + buffer.toString());
-                //csvWtriter.newLine();
-
-                // 写入文件头部
-                writeRow(rowListhead1, csvWtriter);
-
-                // 写入文件内容
-                for (List<Object> row : dataList1) {
-                    writeRow(row, csvWtriter);
-                }
-                csvWtriter.flush();
-            } catch (Exception e) {
-                e.printStackTrace();
-            } finally {
+            }                    //创建文件
+                String fileName = tableName+Integer.toString(t)+".csv";//文件名称
+                //Integer.toString(i)
+                String filePath = "c:/test/"+projectName+"/"; //文件路径
+                File csvFile = null;
+                BufferedWriter csvWtriter = null;
                 try {
-                    csvWtriter.close();
-                } catch (IOException e) {
+                    csvFile = new File(filePath + fileName);
+                    File parent = csvFile.getParentFile();
+                    if (parent != null && !parent.exists()) {
+                        parent.mkdirs();
+                    }
+                    csvFile.createNewFile();
+
+                    // GB2312使正确读取分隔符","
+                    csvWtriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(csvFile), "GB2312"), 1024);
+                    int num = dataListhead.size() / 2;
+                    StringBuffer buffer = new StringBuffer();
+                    for (int c = 0; c < num; c++) {
+                        buffer.append(" ,");
+                    }
+                    // csvWtriter.write(buffer.toString() + fileName + buffer.toString());
+                    //csvWtriter.newLine();
+
+                    // 写入文件头部
+                    writeRow(rowListhead1, csvWtriter);
+
+                    // 写入文件内容
+                    for (List<Object> row : dataList1) {
+                        writeRow(row, csvWtriter);
+                    }
+                    csvWtriter.flush();
+                } catch (Exception e) {
                     e.printStackTrace();
+                } finally {
+                    try {
+                        csvWtriter.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
+
+
             }
+
+
+
             rs.close();
             //st.close();
             conn.close();
